@@ -1,6 +1,6 @@
 # Robiul Hassan - Portfolio Website 
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://mdrobiulhassan.github.io/Portfolio/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://mdrobiulhassan.github.io)
 
 A responsive personal portfolio website showcasing my projects, skills,coding profiles,certifications,resume and contact information as a Computer Science student and developer.
 
