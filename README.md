@@ -24,6 +24,6 @@ A responsive personal portfolio website showcasing my projects, skills,coding pr
 
 ## 🚀 Live Demo
 
-- **GitHub Pages**: [https://mdrobiulhassan.github.io/Portfolio/](https://mdrobiulhassan.github.io/Portfolio/)
+- **GitHub Pages**: [https://mdrobiulhassan.github.io/Portfolio/](https://mdrobiulhassan.github.io)
 
 
