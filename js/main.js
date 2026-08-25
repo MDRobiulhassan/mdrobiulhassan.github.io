@@ -6,18 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (toggle && links) {
         toggle.addEventListener('click', () => {
-            links.classList.toggle('open');
+            const isOpen = links.classList.toggle('open');
             const icon = toggle.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-xmark');
+            if (icon) {
+                icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+            }
         });
 
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 links.classList.remove('open');
                 const icon = toggle.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-xmark');
+                if (icon) {
+                    icon.className = 'fa-solid fa-bars';
+                }
             });
         });
     }

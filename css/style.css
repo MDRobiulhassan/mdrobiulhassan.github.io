@@ -101,6 +101,7 @@ img { max-width: 100%; display: block; }
 .nav-toggle {
   display: none; background: none; border: none;
   color: var(--white); font-size: 1.4rem; cursor: pointer;
+  position: relative; z-index: 120;
 }
 
 /* ================================================================
@@ -617,15 +618,33 @@ textarea.form-input { resize: vertical; min-height: 120px; }
    RESPONSIVE
    ================================================================ */
 @media (max-width: 900px) {
+  .hero {
+    padding-top: 6.5rem;
+    padding-bottom: 3.5rem;
+    min-height: auto;
+  }
   .hero-layout {
     grid-template-columns: 1fr;
-    gap: 3rem; text-align: center;
+    gap: 2.5rem; text-align: center;
   }
   .hero-content { max-width: 100%; }
+  .hero-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: -1;
+  }
+  .hero-photo img {
+    width: 220px;
+    height: 275px;
+    border-radius: var(--radius);
+  }
+  .hero-photo-caption {
+    margin-top: 0.6rem;
+  }
+  .hero-tag { justify-content: center; }
   .hero-desc { margin-left: auto; margin-right: auto; }
   .hero-btns, .hero-socials { justify-content: center; }
-  .hero-photo { display: flex; justify-content: center; }
-  .hero-photo img { width: 260px; height: 320px; }
   .contact-layout { grid-template-columns: 1fr; }
 }
 
@@ -638,6 +657,7 @@ textarea.form-input { resize: vertical; min-height: 120px; }
     flex-direction: column; justify-content: center;
     gap: 1.5rem; padding: 2rem;
     transition: right 0.3s ease;
+    z-index: 110;
   }
   .nav-links.open { right: 0; }
   .nav-toggle { display: block; }
