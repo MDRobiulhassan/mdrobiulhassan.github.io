@@ -2,853 +2,634 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robiul Hassan | Software Engineer</title>
 
-     <title>Robiul Hassan</title>
-     <!-- 
-Robiul Hassan Template 
-http://www.templatemo.com/tm-509-Robiul Hassan
--->
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description"
-          content="Robiul Hassan - Computer Science student passionate about Competitive Programming, AI/ML, Cybersecurity, and DevOps. Portfolio showcasing projects and coding profiles.">
-     <meta name="keywords"
-          content="Robiul Hassan, portfolio, computer science, competitive programming, AI, ML, cybersecurity, web development, codeforces, leetcode">
-     <meta name="author" content="Robiul Hassan">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+        content="Robiul Hassan | Software Engineer. Building software systems with Spring Boot, Laravel, and PostgreSQL. Based in Chittagong, Bangladesh.">
+    <meta name="keywords"
+        content="Robiul Hassan, Software Engineer, Spring Boot, Laravel, Java, Chittagong, Bangladesh">
+    <meta name="author" content="Md. Robiul Hassan">
 
-     <!-- Performance optimizations -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="dns-prefetch" href="https://drive.google.com">
-     <link rel="dns-prefetch" href="https://github.com">
+    <meta property="og:title" content="Robiul Hassan | Software Engineer">
+    <meta property="og:description"
+        content="Software Engineer. Spring Boot, Laravel, PostgreSQL, Cybersecurity.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mdrobiulhassan.github.io/">
+    <meta property="og:image" content="images/ME.jpg">
 
-     <!-- Preload critical CSS -->
-     <link rel="preload" href="css/templatemo-style.css" as="style">
-     <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/magnific-popup.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-     <!-- Inline critical CSS for faster loading -->
-     <style>
-          /* Preloader optimization */
-          .preloader {
-               position: fixed;
-               top: 0;
-               left: 0;
-               width: 100%;
-               height: 100%;
-               z-index: 99999;
-               background: #fafafa;
-          }
-
-          .spinner {
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50%, -50%);
-          }
-
-          /* Image optimization */
-          img {
-               max-width: 100%;
-               height: auto;
-          }
-     </style>
-
-     <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SZT5Z1YBJ"></script>
-     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-
-          gtag('config', 'G-1SZT5Z1YBJ');
-     </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SZT5Z1YBJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1SZT5Z1YBJ');
+    </script>
 </head>
 
 <body>
 
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-               <span class="spinner-rotate"></span>
-          </div>
-     </section>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="nav-brand">robiul.hassan</a>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://drive.google.com/file/d/1PMxf0ByiFU78Ac5dpJ7krOHcwOVkqjwX/view?usp=drive_link"
+                    target="_blank" class="btn-outline">
+                    <i class="fa-solid fa-arrow-down"></i> Resume
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
 
-     <!-- MENU -->
-     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
-          <div class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="dot"></span> Software Engineer
+                    </div>
 
-               <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
+                    <h1>I build software<br>that <span>actually works.</span></h1>
 
-                    <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand">Robiul Hassan</a>
-               </div>
+                    <p class="hero-desc">
+                        I'm Robiul, a software engineer from Chittagong, Bangladesh. I work with Spring Boot, Laravel,
+                        and PostgreSQL to build reliable applications, APIs, and auth systems. When I'm not
+                        writing production code, I'm solving problems on Codeforces or competing in CTFs.
+                    </p>
 
-               <!-- MENU LINKS -->
-               <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
-                         <li><a href="#home" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">About</a></li>
-                         <li><a href="#blog" class="smoothScroll">My Work</a></li>
-                         <li><a href="#coding-profiles" class="smoothScroll">Coding Profiles</a></li>
-                         <!-- <li><a href=".Certifications" class="smoothScroll">Certifications</a></li> -->
-                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn-solid">See my work <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn-ghost">Get in touch</a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/MDRobiulhassan" target="_blank" title="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/md-robiul-hassan" target="_blank" title="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:robiulhassan.dev07@gmail.com" title="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="https://codeforces.com/profile/RobiulHassan" target="_blank" title="Codeforces"><i
+                                class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-photo">
+                    <img src="images/ME.jpg" alt="Robiul Hassan">
+                    <div class="hero-photo-caption">Chittagong, BD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience & Education -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-label">// experience</div>
+            <h2 class="section-heading">Where I've worked</h2>
+            <p class="section-desc">
+                Software engineering roles building applications, API integrations, auth frameworks, and production systems.
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <div class="timeline-top">
+                        <span class="timeline-role">Software Engineer</span>
+                        <span class="timeline-date">Jan 2026 - Aug 2026</span>
+                    </div>
+                    <div class="timeline-company">LofiStack · Chittagong, Bangladesh</div>
+                    <ul class="timeline-points">
+                        <li>Architected backend API integrations syncing internal systems with GoHighLevel (GHL) CRM</li>
+                        <li>Built secure auth framework with email-based OTP for password recovery</li>
+                        <li>Implemented database-backed rate limiting and input validation to prevent abuse</li>
+                        <li>Ran unit and manual testing, fixed production bugs, maintained API docs</li>
+                        <li>Built an HR workflow MVP focused on rapid prototyping and clean UX</li>
                     </ul>
+                </div>
 
-                    <ul class="nav navbar-nav navbar-right">
-                         <li><a href="https://www.facebook.com/mdrobiul.hassan.92102" target="_blank"><i
-                                        class="fa fa-facebook-square"></i></a></li>
-                         <li><a href="mailto:robiul110256@gmail.com"><i class="fa fa-google" aria-hidden="true"></i>
-                         <li><a href="https://github.com/MDRobiulhassan/" class="fa fa-github" target="_blank"></a></li>
-                         <li><a href="https://www.linkedin.com/in/md-robiul-hassan-542a90200/" class="fa fa-linkedin"
-                                   target="_blank"></a></li>
-                         <li class="section-btn"><a href="#" data-toggle="modal" data-target="#modal-form">Sign in /
-                                   Join</a></li>
+                <div class="timeline-entry">
+                    <div class="timeline-top">
+                        <span class="timeline-role">Software Engineer Intern</span>
+                        <span class="timeline-date">Sep 2025 - Dec 2025</span>
+                    </div>
+                    <div class="timeline-company">LofiStack · Chittagong, Bangladesh</div>
+                    <ul class="timeline-points">
+                        <li>Built backend API integrations with GHL CRM to sync core workflows</li>
+                        <li>Ran unit and manual testing: improved API stability, reduced bugs</li>
+                        <li>Wrote technical documentation for API endpoints and internal workflows</li>
                     </ul>
-               </div>
+                </div>
+            </div>
 
-          </div>
-     </section>
+            <div class="edu-block">
+                <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="edu-info">
+                    <h4>BSc in Computer Science & Engineering</h4>
+                    <p>Premier University · <span>Nov 2022 - Present · Chittagong</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-     <!-- HOME -->
-     <section id="home" data-stellar-background-ratio="0.5">
-          <div class="overlay"></div>
-          <div class="container">
-               <div class="row">
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-label">// skills</div>
+            <h2 class="section-heading">What I work with</h2>
+            <p class="section-desc">
+                Tools and technologies I use day to day.
+            </p>
 
-                    <div class="col-md-6 col-sm-12">
-                         <div class="home-info">
-                              <h1>Building and Learning, One Project at a Time.</h1>
-                              <a href="#contact" class="btn section-btn smoothScroll">Contact Me</a>
-                              <span>
-                                   robiulhassan.dev07@gmail.com
-                                   <small>For any inquiry</small>
-                              </span>
-                         </div>
+            <div class="skills-list">
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">HTML / CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-cubes"></i> Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Jetpack Compose</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Supabase</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-vial"></i> Testing & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JUnit</span>
+                        <span class="skill-tag">Mockito</span>
+                        <span class="skill-tag">Swagger / OpenAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">Google Colab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-label">// projects</div>
+            <h2 class="section-heading">Things I've built</h2>
+            <p class="section-desc">
+                Backend systems, full-stack apps, and side projects.
+            </p>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="other">AI & Mobile</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- TripHive -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-body">
+                        <div class="project-meta">2026 · Spring Boot</div>
+                        <h3 class="project-title">TripHive: Hotel Booking Platform</h3>
+                        <p class="project-desc">Airbnb-style booking platform backend with JWT auth, role-based
+                            access, Stripe payments, and dynamic pricing based on occupancy, urgency, and holidays.</p>
+                        <div class="project-stack">
+                            <span>Spring Boot</span><span>JWT</span><span>Stripe</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lofi Connect -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-body">
+                        <div class="project-meta">2025 - 2026 · Spring Boot</div>
+                        <h3 class="project-title">Lofi Connect: CRM Integration</h3>
+                        <p class="project-desc">Production backend syncing internal systems with GoHighLevel CRM.
+                            Email OTP auth, database rate limiting, and rigorous input validation.</p>
+                        <div class="project-stack">
+                            <span>Spring Boot</span><span>GHL API</span><span>PostgreSQL</span><span>OTP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lofi-connect-front-end-application.vercel.app/" target="_blank"><i
+                                    class="fa-solid fa-globe"></i> Live</a>
+                            <a href="https://github.com/zahid0023/spring-backend-template-1" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Railway -->
+                <div class="project-card" data-category="backend web">
+                    <div class="project-body">
+                        <div class="project-meta">2025 · Laravel 11</div>
+                        <h3 class="project-title">Railway Management System</h3>
+                        <p class="project-desc">Train scheduling, seat availability, ticket booking with SSLCommerz
+                            payments. Automated PDF tickets and food service management.</p>
+                        <div class="project-stack">
+                            <span>Laravel</span><span>PHP</span><span>MySQL</span><span>SSLCommerz</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan/Railway-Management-System" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Airline -->
+                <div class="project-card" data-category="backend web">
+                    <div class="project-body">
+                        <div class="project-meta">2025 · Laravel 11</div>
+                        <h3 class="project-title">Airline Management System</h3>
+                        <p class="project-desc">Flight scheduling, booking, payments, admin and passenger dashboards.
+                            End-to-end automated ticket generation.</p>
+                        <div class="project-stack">
+                            <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan/AirlineManagementSystem" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spam Detection -->
+                <div class="project-card" data-category="other">
+                    <div class="project-body">
+                        <div class="project-meta">Mar 2025 · Python</div>
+                        <h3 class="project-title">Spam Email Detection System (AI)</h3>
+                        <p class="project-desc">ML + NLP spam classifier with a Gradio web interface. Tokenization,
+                            vectorization, and high-accuracy classification.</p>
+                        <div class="project-stack">
+                            <span>Python</span><span>Scikit-Learn</span><span>NLP</span><span>Gradio</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan/Spam-Email-Detection" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather App -->
+                <div class="project-card" data-category="other">
+                    <div class="project-body">
+                        <div class="project-meta">Mar 2025 · Kotlin</div>
+                        <h3 class="project-title">Weather Forecast App</h3>
+                        <p class="project-desc">Android app for real-time weather with dynamic UI. Built with Kotlin,
+                            Jetpack Compose, and Firebase.</p>
+                        <div class="project-stack">
+                            <span>Kotlin</span><span>Jetpack Compose</span><span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan/Weather-App" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Planner -->
+                <div class="project-card" data-category="web">
+                    <div class="project-body">
+                        <div class="project-meta">Oct 2024 · PHP</div>
+                        <h3 class="project-title">Event Planner Website</h3>
+                        <p class="project-desc">Event creation and management with user/admin roles. PHP backend with
+                            MySQL and Bootstrap frontend.</p>
+                        <div class="project-stack">
+                            <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://arswinc.thsite.top/?i=2" target="_blank"><i
+                                    class="fa-solid fa-globe"></i> Live</a>
+                            <a href="https://github.com/MDRobiulhassan/Backend-Event-Planner" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DSA -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-body">
+                        <div class="project-meta">Ongoing · C++</div>
+                        <h3 class="project-title">DSA Practice Repository</h3>
+                        <p class="project-desc">Striver's SDE Sheet solutions in C++. Covers trees, graphs, DP,
+                            recursion, and all major data structures.</p>
+                        <div class="project-stack">
+                            <span>C++</span><span>DSA</span><span>Competitive Programming</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan/Data-Structure-Algorithms" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Achievements & CTF -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-label">// achievements</div>
+            <h2 class="section-heading">CTF & Competitions</h2>
+            <p class="section-desc">
+                Cybersecurity competitions I've participated in.
+            </p>
+
+            <div class="ctf-grid">
+                <div class="ctf-card">
+                    <div class="ctf-rank">#68 / 250 teams</div>
+                    <h3>BCSIT Fest CTF 2025</h3>
+                    <div class="ctf-org">National Competition</div>
+                    <p>Cryptography, reverse engineering, web exploitation, and digital forensics challenges in a
+                        timed competitive format.</p>
+                </div>
+
+                <div class="ctf-card">
+                    <div class="ctf-rank">#164 / 1,100+ teams</div>
+                    <h3>Reply Hack the Code</h3>
+                    <div class="ctf-org">International Competition</div>
+                    <p>Combined CTF and coding challenge with teams from across the globe. Placed in the top 15%
+                        for cybersecurity and algorithmic problem-solving.</p>
+                </div>
+            </div>
+
+            <!-- Coding Profiles -->
+            <div style="margin-top: 4rem;">
+                <h2 class="section-heading">Coding profiles</h2>
+                <p class="section-desc">Where I practice algorithms and solve problems.</p>
+
+                <div class="profiles-row">
+                    <div class="profile-item">
+                        <img src="images/codeforces_logo.png" alt="Codeforces">
+                        <h4>Codeforces</h4>
+                        <p>Competitive Contests & Problem Solving</p>
+                        <a href="https://codeforces.com/profile/RobiulHassan" target="_blank" class="pf-link">
+                            View profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-sm-12">
-                         <div class="home-content"
-                              style="display: flex; justify-content: center; align-items: center; height: 100%; padding: 60px 0;">
-                              <!-- Content space for future use -->
-                         </div>
+                    <div class="profile-item">
+                        <img src="images/leetcode_logo.png" alt="LeetCode">
+                        <h4>LeetCode</h4>
+                        <p>DSA Practice & Interview Preparation</p>
+                        <a href="https://leetcode.com/u/MD_Robiul_Hassan/" target="_blank" class="pf-link">
+                            View profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-               </div>
-          </div>
-     </section>
-
-
-     <!-- ABOUT -->
-     <section id="about" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title text-center">
-                              <h2>About Me</h2>
-                              <span class="line-bar">...</span>
-                         </div>
-                    </div>
-               </div>
-
-               <!-- About Me Section -->
-               <div class="row" style="margin-top: 5px;">
-                    <div class="col-md-12">
-                         <div class="about-info" style="padding: 0 30px; margin-bottom: 40px;">
-                              <!-- Experience Timeline (LinkedIn Style) -->
-                              <div style="max-width: 700px; margin: 0 auto 30px;">
-                                   <h4 class="about-section-title" style="margin-bottom: 25px; text-align: left;">
-                                        Experience</h4>
-
-                                   <!-- Timeline Container -->
-                                   <div style="position: relative; padding-left: 50px;">
-                                        <!-- Vertical Line -->
-                                        <div
-                                             style="position: absolute; left: 15px; top: 10px; bottom: 10px; width: 2px; background: #ddd;">
-                                        </div>
-
-                                        <!-- Current Position -->
-                                        <div style="position: relative; margin-bottom: 35px;">
-                                             <!-- Timeline Dot -->
-                                             <div
-                                                  style="position: absolute; left: -40px; top: 8px; width: 12px; height: 12px; background: #28a745; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 2px #28a745;">
-                                             </div>
-
-                                             <div
-                                                  style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #28a745; text-align: center;">
-                                                  <h6 class="about-skill-category"
-                                                       style="font-weight: 600; margin-bottom: 8px; color: #696969; font-size: 1.3em;">
-                                                       Software Engineer (Backend)</h6>
-                                                  <p class="about-skill-text"
-                                                       style="font-weight: 600; margin: 0 auto 8px auto; color: #2B1D90; font-size: 1.3em; text-align: center; display: block; width: 100%;">
-                                                       LofiStack</p>
-                                                  <small style="color: #333; font-weight: 400;">January 2026 -
-                                                       Present</small>
-                                             </div>
-                                        </div>
-
-                                        <!-- Previous Experience -->
-                                        <div style="position: relative;">
-                                             <!-- Timeline Dot -->
-                                             <div
-                                                  style="position: absolute; left: -40px; top: 8px; width: 12px; height: 12px; background: #999; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 2px #ddd;">
-                                             </div>
-
-                                             <div
-                                                  style="background: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #999; text-align: center;">
-                                                  <h6 class="about-skill-category"
-                                                       style="font-weight: 600; margin-bottom: 8px; color: #696969; font-size: 1.3em;">
-                                                       Software Engineer Intern</h6>
-                                                  <p class="about-skill-text"
-                                                       style="font-weight: 600; margin: 0 auto 8px auto; color: #2B1D90; font-size: 1.3em; text-align: center; display: block; width: 100%;">
-                                                       LofiStack</p>
-                                                  <small style="color: #333; font-weight: 400;">September 2025 -
-                                                       December 2025</small>
-                                             </div>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div style="text-align: justify; max-width: 1000px; margin: 0 auto; margin-top: 30px;">
-                                   <p class="about-description">
-                                        I'm Robiul Hassan, a Computer Science student passionate about Competitive
-                                        Programming, AI/ML, Cybersecurity, and DevOps. Currently working as a Software
-                                        Engineer (Backend) at LofiStack, where I continue to build on my internship
-                                        experience
-                                        in server-side development and system architecture.
-                                   </p>
-
-                                   <p class="about-description" style="margin-bottom: 30px;">
-                                        I'm strengthening my skills in Data Structures & Algorithms, solving problems on
-                                        competitive programming platforms, and exploring AI/ML and Cybersecurity. My
-                                        goal is to continuously learn, grow, and contribute to innovative tech
-                                        solutions.
-                                   </p>
-                              </div>
-
-                              <div style="text-align: center;">
-                                   <a href="https://drive.google.com/file/d/1PMxf0ByiFU78Ac5dpJ7krOHcwOVkqjwX/view?usp=drive_link"
-                                        class="btn section-btn about-resume-btn" target="_blank">Download Resume</a>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-
-               <!-- Skills and Activities Row -->
-               <div class="row">
-                    <!-- Skills Column -->
-                    <div class="col-md-6 col-sm-12">
-                         <div class="about-info" style="padding: 0 20px; margin-bottom: 30px;">
-                              <div
-                                   style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 10px; border-left: 4px solid #28a745; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.2s ease;">
-                                   <h4 class="about-section-title">Skills</h4>
-
-                                   <div style="margin-bottom: 25px;">
-                                        <h6 class="about-skill-category">Programming & Development</h6>
-                                        <p class="about-skill-text">C++, Java, Python, Spring Boot, PHP (Laravel), HTML,
-                                             CSS, Bootstrap</p>
-                                   </div>
-
-                                   <div style="margin-bottom: 25px;">
-                                        <h6 class="about-skill-category">Database</h6>
-                                        <p class="about-skill-text">PostgreSQL, MySQL, Firebase, Supabase</p>
-                                   </div>
-
-                                   <div style="margin-bottom: 25px;">
-                                        <h6 class="about-skill-category">Testing & Deployment</h6>
-                                        <p class="about-skill-text">JUnit, Mockito, Swagger OpenAPI</p>
-                                   </div>
-
-                                   <div>
-                                        <h6 class="about-skill-category">Tools & Platforms</h6>
-                                        <p class="about-skill-text">Git, Google Colab, Docker</p>
-                                   </div>
-                              </div>
-                         </div>
+                    <div class="profile-item">
+                        <img src="images/gfg_logo.svg" alt="GeeksforGeeks">
+                        <h4>GeeksforGeeks</h4>
+                        <p>Problem Sets & Computer Science Concepts</p>
+                        <a href="https://www.geeksforgeeks.org/user/robiulhasc8r0/" target="_blank" class="pf-link">
+                            View profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <!-- Extracurricular Activities Column -->
-                    <div class="col-md-6 col-sm-12">
-                         <div class="about-info" style="padding: 0 20px; margin-bottom: 30px;">
-                              <div
-                                   style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 10px; border-left: 4px solid #ffc107; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.2s ease;">
-                                   <h4 class="about-section-title">Extracurricular Activities</h4>
-
-                                   <div style="margin-bottom: 30px;">
-                                        <h6 class="about-skill-category extracurricular">BCSIT Fest CTF 2025</h6>
-                                        <p class="about-activity-text">Secured 68th position among 250 teams,
-                                             demonstrated cybersecurity and problem-solving skills in a competitive
-                                             environment.</p>
-                                   </div>
-
-                                   <div>
-                                        <h6 class="about-skill-category extracurricular">Reply Hack the Code Challenge
-                                        </h6>
-                                        <p class="about-activity-text">Secured 164th position among 1100 teams,
-                                             demonstrated cybersecurity and problem-solving skills in a competitive
-                                             environment at international level.</p>
-                                   </div>
-                              </div>
-                         </div>
+                    <div class="profile-item">
+                        <div class="pf-gh-icon"><i class="fa-brands fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <p>Repositories & Open Source Contribution</p>
+                        <a href="https://github.com/MDRobiulhassan" target="_blank" class="pf-link">
+                            View repos <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
-               </div>
-          </div>
-          </div>
+                </div>
+            </div>
 
-          </div>
-          </div>
-     </section>
+            <!-- Certifications -->
+            <div style="margin-top: 4rem;">
+                <h2 class="section-heading">Certifications</h2>
+                <p class="section-desc">Professional certificates I've earned.</p>
 
-
-     <!-- Projects -->
-     <section id="blog" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row" style="row-gap: 20px;">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>My Projects</h2>
-                              <span class="line-bar">...</span>
-                         </div>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-issuer">Reply Challenge</div>
+                        <h3 class="cert-name">Hack The Code Challenge</h3>
+                        <p class="cert-desc">International CTF and coding competition (top 15% placement).</p>
+                        <a href="https://drive.google.com/file/d/1WzSt14mmqMAmJEQAJCNvv0yDxDrMm3IU/view?usp=drive_link"
+                            target="_blank" class="cert-link">
+                            View certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> October 2025</small>
-                                   <h3><a href="https://loficonnect.lofistack.com/" target="_blank">Lofi Connect</a>
-                                   </h3>
-                                   <p>Worked on Lofi Connect backend, integrating APIs with GoHighLevel CRM, performing
-                                        tests, fixing bugs, and documenting workflows.</p>
-                                   <a href="https://lofi-connect-front-end-application.vercel.app/"
-                                        class="btn section-btn" target="_blank">Visit Website</a>
-                              </div>
-                         </div>
+                    <div class="cert-card">
+                        <div class="cert-issuer">Coursera</div>
+                        <h3 class="cert-name">Networking Fundamentals</h3>
+                        <p class="cert-desc">Network architectures, IP routing, subnets, and protocols.</p>
+                        <a href="https://drive.google.com/file/d/1YSzRLCXVCpmxSiTGdvuDx-XWu_Vty8CM/view?usp=drive_link"
+                            target="_blank" class="cert-link">
+                            View certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> January 2026</small>
-                                   <h3><a href="https://github.com/zahid0023/spring-backend-template-1"
-                                             target="_blank">Authentication & Authorization System</a>
-                                   </h3>
-                                   <p>Implemented a multi-flow authentication system with email-based OTP verification
-                                        for password
-                                        recovery, database-backed rate limiting
-                                        with existing authentication logic.</p>
-                                   <a href="https://lofi-connect-front-end-application.vercel.app/"
-                                        class="btn section-btn" target="_blank">See Details</a>
-                              </div>
-                         </div>
+                    <div class="cert-card">
+                        <div class="cert-issuer">Coursera</div>
+                        <h3 class="cert-name">Linux Server Management & Security</h3>
+                        <p class="cert-desc">Server administration, process management, and system security.</p>
+                        <a href="https://drive.google.com/file/d/1DhSHJpB7Rlq5nGzqg36cmRehGqSxt5KY/view?usp=drive_link"
+                            target="_blank" class="cert-link">
+                            View certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> September 2025</small>
-                                   <h3><a href="https://github.com/MDRobiulhassan/Railway-Management-System"
-                                             target="_blank">Railway Management System</a>
-                                   </h3>
-                                   <p>A full-featured web-based railway management solution built with Laravel 11.
-                                        Features train scheduling, ticket booking, payment integration, and automated
-                                        PDF ticketing.</p>
-                                   <a href="https://github.com/MDRobiulhassan/Railway-Management-System"
-                                        class="btn section-btn" target="_blank">See Details</a>
-                              </div>
-                         </div>
+                    <div class="cert-card">
+                        <div class="cert-issuer">Coursera</div>
+                        <h3 class="cert-name">Incident Response & Digital Forensics</h3>
+                        <p class="cert-desc">Incident triage, threat containment, and digital evidence analysis.</p>
+                        <a href="https://drive.google.com/file/d/1aRcPjkVkWnrysybeJYed072lP12tKf-i/view?usp=drive_link"
+                            target="_blank" class="cert-link">
+                            View certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> September 2025</small>
-                                   <h3><a href="https://github.com/MDRobiulhassan/AirlineManagementSystem"
-                                             target="_blank">Airline Management System</a>
-                                   </h3>
-                                   <p>A comprehensive airline management platform built with Laravel 11. Includes flight
-                                        scheduling, booking system, secure payments, and automated ticket generation.
-                                   </p>
-                                   <a href="https://github.com/MDRobiulhassan/AirlineManagementSystem"
-                                        class="btn section-btn" target="_blank">See Details</a>
-                              </div>
-                         </div>
+                    <div class="cert-card">
+                        <div class="cert-issuer">Coursera</div>
+                        <h3 class="cert-name">Penetration Testing & Threat Hunting</h3>
+                        <p class="cert-desc">Ethical hacking methodologies and threat hunting workflows.</p>
+                        <a href="https://drive.google.com/file/d/1MOM7X3eHG7Oq3QVKdN6xiaMXswvgMObm/view?usp=drive_link"
+                            target="_blank" class="cert-link">
+                            View certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="https://github.com/MDRobiulhassan/Weather-App" target="_blank">Weather
-                                             Forecast App</a>
-                                   </h3>
-                                   <p>Android app for real-time weather updates, forecasts, and alerts with dynamic UI.
-                                        Uses Kotlin, Jetpack Compose, and Firebase.</p>
-                                   <a href="https://github.com/MDRobiulhassan/Weather-App" class="btn section-btn"
-                                        target="_blank">See
-                                        Details</a>
-                              </div>
-                         </div>
+                    <div class="cert-card">
+                        <div class="cert-issuer">Coursera</div>
+                        <h3 class="cert-name">Advanced Cybersecurity Concepts</h3>
+                        <p class="cert-desc">Capstone covering defense architectures and risk mitigation.</p>
+                        <a href="https://drive.google.com/file/d/1HzfROpOmDh3T0FQBYNOZAbH0pDZVN8D0/view?usp=drive_link"
+                            target="_blank" class="cert-link">
+                            View certificate <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="https://github.com/MDRobiulhassan/Spam-Email-Detection"
-                                             target="_blank">Spam Email
-                                             Detection System Using AI.</a></h3>
-                                   <p>Spam email detection using machine learning and NLP, with a Gradio interface for
-                                        easy use.
-                                   </p>
-                                   <a href="https://github.com/MDRobiulhassan/Spam-Email-Detection"
-                                        class="btn section-btn" target="_blank">Read more</a>
-                              </div>
-                         </div>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-label">// contact</div>
+            <h2 class="section-heading">Let's talk</h2>
+            <p class="section-desc">
+                Have a project, role, or idea? Drop me a message.
+            </p>
+
+            <div class="contact-layout">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xkgjqynd" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" class="form-input" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" class="form-input" placeholder="you@example.com"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone (optional)</label>
+                            <input type="tel" name="phone" class="form-input" placeholder="+880 16XX XXX XXX">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" class="form-input"
+                                placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-solid" style="width: 100%; justify-content: center;">
+                            Send message <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-block">
+                        <label>Email</label>
+                        <a href="mailto:robiulhassan.dev07@gmail.com">robiulhassan.dev07@gmail.com</a>
                     </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> October 2024</small>
-                                   <h3><a href="https://github.com/MDRobiulhassan/Backend-Event-Planner"
-                                             target="_blank">Event Planner
-                                             Website.</a></h3>
-                                   <p>Web platform to create/manage events with user/admin roles. Built with PHP, MySQL,
-                                        and Bootstrap.
-                                   </p>
-                                   <a href="https://arswinc.thsite.top/?i=2" class="btn section-btn"
-                                        target="_blank">Visit Website</a>
-                              </div>
-                         </div>
+                    <div class="info-block">
+                        <label>Phone</label>
+                        <a href="tel:01636114935">+880 1636-114935</a>
                     </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> June 2023</small>
-                                   <h3><a href="https://github.com/MDRobiulhassan/Data-Structure-Algorithms"
-                                             target="_blank">DSA.</a>
-                                   </h3>
-                                   <p>This repo contains my DSA practice solutions from Striver's Sheet, implemented in
-                                        C++ and some C, categorized by topic.</p>
-                                   <a href="https://github.com/MDRobiulhassan/Data-Structure-Algorithms"
-                                        class="btn section-btn" target="_blank">View Detail</a>
-                              </div>
-                         </div>
+                    <div class="info-block">
+                        <label>Location</label>
+                        <p>Chittagong, Bangladesh</p>
                     </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- CODING PROFILES -->
-     <section id="coding-profiles">
-          <div class="container">
-               <div class="section-title">
-                    <h2>Coding Profiles</h2>
-                    <span class="line-bar">...</span>
-               </div>
-               <div class="row">
-                    <!-- Codeforces Profile -->
-                    <div class="col-md-4">
-                         <div class="coding-profile">
-                              <!-- Codeforces Logo -->
-                              <img src="images/codeforces_logo.png" alt="Codeforces Logo" class="img-fluid mb-2"
-                                   style="width: 150px; height: 150px;" loading="lazy">
-                              <h4>Codeforces</h4>
-                              <p>Check out my Codeforces profile where I solve programming challenges
-                                   regularly:</p>
-                              <a href="https://codeforces.com/profile/RobiulHassan" class="btn section-btn"
-                                   target="_blank">View
-                                   Profile</a>
-                         </div>
+                    <div class="info-block">
+                        <label>Socials</label>
+                        <div class="hero-socials" style="margin-top: 0.5rem;">
+                            <a href="https://github.com/MDRobiulhassan" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/md-robiul-hassan" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/mdrobiul.hassan.92102" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </div>
                     </div>
-                    <!-- LeetCode Profile -->
-                    <div class="col-md-4">
-                         <div class="coding-profile">
-                              <!-- LeetCode Logo -->
-                              <img src="images/leetcode_logo.png" alt="LeetCode Logo" class="img-fluid mb-2"
-                                   style="width: 150px; height: 150px;" loading="lazy">
-                              <h4>LeetCode</h4>
-                              <p class="">Take a look at my LeetCode profile for coding practice and challenges:</p>
-                              <a href="https://leetcode.com/u/MD_Robiul_Hassan/" class="btn section-btn"
-                                   target="_blank">View
-                                   Profile</a>
-                         </div>
+                    <div class="map-box">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7379.398761550087!2d91.82314564031138!3d22.364977140395833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd883de5d7c91%3A0xf7af0db5aecdf45b!2z4Kau4KeB4Kaw4Ka-4Kam4Kaq4KeB4KawLCDgpprgpp_gp43gpp_gppfgp43gprDgpr7gpq4!5e0!3m2!1sbn!2sbd!4v1743272446795!5m2!1sbn!2sbd"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-                    <!-- GeeksforGeeks Profile -->
-                    <div class="col-md-4">
-                         <div class="coding-profile">
-                              <!-- GeeksforGeeks Logo -->
-                              <img src="images/gfg_logo.svg" alt="GeeksforGeeks Logo" class="img-fluid mb-2"
-                                   style="width: 150px; height: 150px;" loading="lazy">
-                              <h4>GeeksforGeeks</h4>
-                              <p class="mt-2">Explore my GeeksforGeeks profile with my problem-solving and tutorials:
-                              </p>
-                              <a href="https://www.geeksforgeeks.org/user/robiulhasc8r0/" class="btn section-btn"
-                                   target="_blank">View
-                                   Profile</a>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-     <!-- CERTIFICATIONS -->
-     <section id="blog" class="Certifications" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Certifications</h2>
-                              <span class="line-bar">...</span>
-                         </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="">Hack The Code Challenge</a>
-                                   </h3>
-                                   <h4>Reply Challenge</h4>
-                                   <p>An online CTF and Coding combined competition. Secured 164th position among 1100+
-                                        international teams.</p>
-                                   <a href="https://drive.google.com/file/d/1WzSt14mmqMAmJEQAJCNvv0yDxDrMm3IU/view?usp=drive_link"
-                                        class="btn section-btn" target="_blank">See Certificate</a>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="">Networking Fundamentals</a>
-                                   </h3>
-                                   <h4>Coursera</h4>
-                                   <p>Comprehensive course covering fundamental networking concepts and network
-                                        architectures essentials.</p>
-                                   <a href="https://drive.google.com/file/d/1YSzRLCXVCpmxSiTGdvuDx-XWu_Vty8CM/view?usp=drive_link"
-                                        class="btn section-btn" target="_blank">See Certificate</a>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="">Linux Server Management and Security</a>
-                                   </h3>
-                                   <h4>Coursera</h4>
-                                   <p>Advanced course covering Linux server administration and system monitoring
-                                        techniques for enterprise security.</p>
-                                   <a href="https://drive.google.com/file/d/1DhSHJpB7Rlq5nGzqg36cmRehGqSxt5KY/view?usp=drive_link"
-                                        class="btn section-btn" target="_blank">See Certificate</a>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="">Incident Response and Digital Forensics</a>
-                                   </h3>
-                                   <h4>Coursera</h4>
-                                   <p>Specialized training in cybersecurity incident response procedures, digital
-                                        forensics techniques.</p>
-                                   <a href="https://drive.google.com/file/d/1aRcPjkVkWnrysybeJYed072lP12tKf-i/view?usp=drive_link"
-                                        class="btn section-btn" target="_blank">See Certificate</a>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="">Penetration Testing, Threat Hunting</a>
-                                   </h3>
-                                   <h4>Coursera</h4>
-                                   <p>Advanced cybersecurity certification covering penetration testing methodologies,
-                                        threat hunting techniques.</p>
-                                   <a href="https://drive.google.com/file/d/1MOM7X3eHG7Oq3QVKdN6xiaMXswvgMObm/view?usp=drive_link"
-                                        class="btn section-btn" target="_blank">See Certificate</a>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- BLOG THUMB -->
-                         <div class="media blog-thumb">
-                              <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> March 2025</small>
-                                   <h3><a href="">Advanced Cybersecurity Concepts</a>
-                                   </h3>
-                                   <h4>Coursera</h4>
-                                   <p>Comprehensive capstone certification demonstrating mastery of advanced
-                                        cybersecurity concepts.</p>
-                                   <a href="https://drive.google.com/file/d/1HzfROpOmDh3T0FQBYNOZAbH0pDZVN8D0/view?usp=drive_link"
-                                        class="btn section-btn" target="_blank">See Certificate</a>
-                              </div>
-                         </div>
-                    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-copy">&copy; 2026 Robiul Hassan</div>
+                <div class="footer-links">
+                    <a href="https://github.com/MDRobiulhassan" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/md-robiul-hassan" target="_blank">LinkedIn</a>
+                    <a href="mailto:robiulhassan.dev07@gmail.com">Email</a>
+                    <a href="https://codeforces.com/profile/RobiulHassan" target="_blank">Codeforces</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-               </div>
-          </div>
-     </section>
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-text">Copied!</span>
+    </div>
 
-     <!-- CONTACT -->
-     <section id="contact" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Contact Me</h2>
-                              <span class="line-bar">...</span>
-                         </div>
-                    </div>
-
-                    <div class="col-md-8 col-sm-8">
-
-                         <!-- CONTACT FORM HERE -->
-                         <form id="contact-form" role="form" action="https://formspree.io/f/xkgjqynd" method="POST">
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" placeholder="Full Name" name="name" required>
-                              </div>
-
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="email" class="form-control" placeholder="Your Email" name="email"
-                                        required>
-                              </div>
-
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="tel" class="form-control" placeholder="Your Phone" name="phone">
-                              </div>
-
-                              <div class="col-md-12 col-sm-12">
-                                   <textarea class="form-control" rows="6" placeholder="Your Message" name="message"
-                                        required></textarea>
-                              </div>
-
-                              <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" value="Send Message">
-                              </div>
-                         </form>
-
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="google-map">
-                              <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
-                              <iframe
-                                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7379.398761550087!2d91.82314564031138!3d22.364977140395833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd883de5d7c91%3A0xf7af0db5aecdf45b!2z4Kau4KeB4Kaw4Ka-4Kam4Kaq4KeB4KawLCDgpprgpp_gp43gpp_gppfgp43gprDgpr7gpq4!5e0!3m2!1sbn!2sbd!4v1743272446795!5m2!1sbn!2sbd"
-                                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                   referrerpolicy="no-referrer-when-downgrade"></iframe>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- FOOTER -->
-     <footer data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-5 col-sm-12">
-                         <div class="footer-thumb footer-info">
-                              <h2>Robiul Hassan</h2>
-                              <p>I'm Robiul Hassan, a Computer Science student passionate about Competitive Programming,
-                                   AI/ML, Cybersecurity, and DevOps. Currently working as a Software Engineer (Backend)
-                                   at
-                                   LofiStack, where I continue to develop my skills in server-side development and
-                                   system architecture.</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-2 col-sm-4">
-                         <div class="footer-thumb">
-                              <h2>Explore</h2>
-                              <ul class="footer-link">
-                                   <li><a href="#about">About Me</a></li>
-                                   <li><a href="#blog">My Projects</a></li>
-                                   <li><a href="#coding-profiles">Coding Profiles</a></li>
-                                   <li><a href=".Certifications">Certifications</a></li>
-                                   <li><a
-                                             href="https://drive.google.com/file/d/12uRX-wwJFPstsRY-Mn36JAWK-mtqrnuq/view?usp=sharing">My
-                                             Resume</a></li>
-                                   <li><a href="#contact">Contact</a></li>
-                              </ul>
-
-                         </div>
-                    </div>
-
-                    <div class="col-md-2 col-sm-4">
-                         <div class="footer-thumb">
-                              <h2>Skills & Work</h2>
-                              <ul class="footer-link">
-                                   <li><a href="#">Web Development</a></li>
-                                   <li><a href="#">AI & ML</a></li>
-                                   <li><a href="#">Cybersecurity</a></li>
-                                   <li><a href="#">Competitive Programming</a></li>
-                              </ul>
-
-                         </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-4">
-                         <div class="footer-thumb">
-                              <h2>Find Me</h2>
-                              <p>Mohammedpur<br> Muradpur,Chittagong</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="footer-bottom">
-                              <div class="col-md-6 col-sm-5">
-                                   <div class="copyright-text">
-                                        <p>Copyright &copy; 2025 Robiul Hassan</p>
-                                   </div>
-                              </div>
-                              <div class="col-md-6 col-sm-7">
-                                   <div class="phone-contact">
-                                        <p>Contact Me <span>robiulhassan.dev07@gmail.com</span></p>
-                                   </div>
-                                   <ul class="social-icon">
-                                        <li><a href="https://www.facebook.com/mdrobiul.hassan.92102"
-                                                  class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                        <li><a href="mailto:robiul110256@gmail.com" class="fa fa-google"></a></li>
-                                        <li><a href="https://github.com/MDRobiulhassan/" class="fa fa-github"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/md-robiul-hassan-542a90200/"
-                                                  class="fa fa-linkedin"></a></li>
-                                   </ul>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </footer>
-
-
-     <!-- MODAL -->
-     <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-               <div class="modal-content modal-popup">
-
-                    <div class="modal-header">
-                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                         </button>
-                    </div>
-
-                    <div class="modal-body">
-                         <div class="container-fluid">
-                              <div class="row">
-
-                                   <div class="col-md-12 col-sm-12">
-                                        <div class="modal-title">
-                                             <h2>Robiul Hassan Co</h2>
-                                        </div>
-
-                                        <!-- NAV TABS -->
-                                        <ul class="nav nav-tabs" role="tablist">
-                                             <li class="active"><a href="#sign_up" aria-controls="sign_up" role="tab"
-                                                       data-toggle="tab">Create an account</a></li>
-                                             <li><a href="#sign_in" aria-controls="sign_in" role="tab"
-                                                       data-toggle="tab">Sign In</a></li>
-                                        </ul>
-
-                                        <!-- TAB PANES -->
-                                        <div class="tab-content">
-                                             <div role="tabpanel" class="tab-pane fade in active" id="sign_up">
-                                                  <form action="#" method="post">
-                                                       <input type="text" class="form-control" name="name"
-                                                            placeholder="Name" required>
-                                                       <input type="telephone" class="form-control" name="telephone"
-                                                            placeholder="Telephone" required>
-                                                       <input type="email" class="form-control" name="email"
-                                                            placeholder="Email" required>
-                                                       <input type="password" class="form-control" name="password"
-                                                            placeholder="Password" required>
-                                                       <input type="submit" class="form-control" name="submit"
-                                                            value="Submit Button">
-                                                  </form>
-                                             </div>
-
-                                             <div role="tabpanel" class="tab-pane fade in" id="sign_in">
-                                                  <form action="#" method="post">
-                                                       <input type="email" class="form-control" name="email"
-                                                            placeholder="Email" required>
-                                                       <input type="password" class="form-control" name="password"
-                                                            placeholder="Password" required>
-                                                       <input type="submit" class="form-control" name="submit"
-                                                            value="Submit Button">
-                                                       <a href="">Forgot your password?</a>
-                                                  </form>
-                                             </div>
-                                        </div>
-                                   </div>
-
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-     <!-- SCRIPTS - Optimized loading -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.stellar.min.js" defer></script>
-     <script src="js/jquery.magnific-popup.min.js" defer></script>
-     <script src="js/smoothscroll.js" defer></script>
-     <script src="js/custom.js" defer></script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
