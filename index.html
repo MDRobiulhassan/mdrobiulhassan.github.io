@@ -13,8 +13,7 @@
     <meta name="author" content="Md. Robiul Hassan">
 
     <meta property="og:title" content="Robiul Hassan | Software Engineer">
-    <meta property="og:description"
-        content="Software Engineer. Spring Boot, Laravel, PostgreSQL, Cybersecurity.">
+    <meta property="og:description" content="Software Engineer. Spring Boot, Laravel, PostgreSQL, Cybersecurity.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mdrobiulhassan.github.io/">
     <meta property="og:image" content="images/ME.jpg">
@@ -79,14 +78,13 @@
                     <h1>I build software<br>that <span>actually works.</span></h1>
 
                     <p class="hero-desc">
-                        I'm Robiul, a software engineer from Chittagong, Bangladesh. I work with Spring Boot, Laravel,
+                        I'm Robiul, a software engineer from Chittagong, Bangladesh. I work with Spring Boot, Next.js,
                         and PostgreSQL to build reliable applications, APIs, and auth systems. When I'm not
                         writing production code, I'm solving problems on Codeforces or competing in CTFs.
                     </p>
 
                     <div class="hero-btns">
-                        <a href="#projects" class="btn-solid">See my work <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#projects" class="btn-solid">See my work <i class="fa-solid fa-arrow-right"></i></a>
                         <a href="#contact" class="btn-ghost">Get in touch</a>
                     </div>
 
@@ -97,7 +95,7 @@
                                 class="fa-brands fa-linkedin-in"></i></a>
                         <a href="mailto:robiulhassan.dev07@gmail.com" title="Email"><i
                                 class="fa-solid fa-envelope"></i></a>
-                        <a href="https://codeforces.com/profile/RobiulHassan" target="_blank" title="Codeforces"><i
+                        <a href="https://leetcode.com/u/MD_Robiul_Hassan/" target="_blank" title="LeetCode"><i
                                 class="fa-solid fa-code"></i></a>
                     </div>
                 </div>
@@ -117,7 +115,8 @@
             <div class="section-label">// experience</div>
             <h2 class="section-heading">Where I've worked</h2>
             <p class="section-desc">
-                Software engineering roles building applications, API integrations, auth frameworks, and production systems.
+                Software engineering roles building applications, API integrations, auth frameworks, and production
+                systems.
             </p>
 
             <div class="timeline">
@@ -128,7 +127,8 @@
                     </div>
                     <div class="timeline-company">LofiStack · Chittagong, Bangladesh</div>
                     <ul class="timeline-points">
-                        <li>Architected backend API integrations syncing internal systems with GoHighLevel (GHL) CRM</li>
+                        <li>Architected backend API integrations syncing internal systems with GoHighLevel (GHL) CRM
+                        </li>
                         <li>Built secure auth framework with email-based OTP for password recovery</li>
                         <li>Implemented database-backed rate limiting and input validation to prevent abuse</li>
                         <li>Ran unit and manual testing, fixed production bugs, maintained API docs</li>
@@ -187,8 +187,12 @@
                     <h3><i class="fa-solid fa-cubes"></i> Frameworks</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Spring Security</span>
+                        <span class="skill-tag">Spring AI</span>
+                        <span class="skill-tag">Next.js</span>
                         <span class="skill-tag">React</span>
+                        <span class="skill-tag">TanStack Query</span>
+                        <span class="skill-tag">Laravel</span>
                         <span class="skill-tag">Bootstrap</span>
                         <span class="skill-tag">Jetpack Compose</span>
                     </div>
@@ -201,6 +205,8 @@
                         <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">Firebase</span>
                         <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">pgvector</span>
+                        <span class="skill-tag">MinIO</span>
                     </div>
                 </div>
 
@@ -218,9 +224,11 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Burp Suite</span>
-                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">Flyway</span>
+                        <span class="skill-tag">Stripe</span>
                         <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">Burp Suite</span>
                         <span class="skill-tag">Google Colab</span>
                     </div>
                 </div>
@@ -247,6 +255,44 @@
 
             <div class="projects-grid" id="projects-grid">
 
+                <!-- Pathshala -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-body">
+                        <div class="project-meta">2026 · Spring Boot</div>
+                        <h3 class="project-title">Pathshala: Online Examination Platform</h3>
+                        <p class="project-desc">Bengali-first examination platform for university admissions, academic
+                            exams, and competitive tests, featuring timed assessments, randomized questions, JWT
+                            authentication, role-based access control, and Flyway database migrations.</p>
+                        <div class="project-stack">
+                            <span>Spring
+                                Boot</span><span>Next.js</span><span>PostgreSQL</span><span>Flyway</span><span>Supabase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CodifyAI -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-body">
+                        <div class="project-meta">2025 · Spring Boot · AI</div>
+                        <h3 class="project-title">CodifyAI: AI-Powered Application Builder</h3>
+                        <p class="project-desc">AI-powered application builder backend integrating large language models
+                            for AI-assisted application development, using Spring AI and OpenRouter for LLM
+                            interactions, pgvector for vector storage, and MinIO for file management.</p>
+                        <div class="project-stack">
+                            <span>Spring Boot</span><span>Spring
+                                AI</span><span>OpenRouter</span><span>pgvector</span><span>MinIO</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MDRobiulhassan" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- TripHive -->
                 <div class="project-card" data-category="backend">
                     <div class="project-body">
@@ -255,7 +301,7 @@
                         <p class="project-desc">Airbnb-style booking platform backend with JWT auth, role-based
                             access, Stripe payments, and dynamic pricing based on occupancy, urgency, and holidays.</p>
                         <div class="project-stack">
-                            <span>Spring Boot</span><span>JWT</span><span>Stripe</span><span>PostgreSQL</span>
+                            <span>Spring Boot</span><span>Next.js</span><span>Stripe</span><span>PostgreSQL</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/MDRobiulhassan" target="_blank"><i
@@ -267,12 +313,12 @@
                 <!-- Lofi Connect -->
                 <div class="project-card" data-category="backend">
                     <div class="project-body">
-                        <div class="project-meta">2025 - 2026 · Spring Boot</div>
+                        <div class="project-meta">2025 · Spring Boot</div>
                         <h3 class="project-title">Lofi Connect: CRM Integration</h3>
                         <p class="project-desc">Production backend syncing internal systems with GoHighLevel CRM.
                             Email OTP auth, database rate limiting, and rigorous input validation.</p>
                         <div class="project-stack">
-                            <span>Spring Boot</span><span>GHL API</span><span>PostgreSQL</span><span>OTP</span>
+                            <span>Spring Boot</span><span>GoHighLevel API</span><span>PostgreSQL</span><span>AWS</span>
                         </div>
                         <div class="project-links">
                             <a href="https://lofi-connect-front-end-application.vercel.app/" target="_blank"><i
@@ -362,8 +408,8 @@
                             <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://arswinc.thsite.top/?i=2" target="_blank"><i
-                                    class="fa-solid fa-globe"></i> Live</a>
+                            <a href="https://arswinc.thsite.top/?i=2" target="_blank"><i class="fa-solid fa-globe"></i>
+                                Live</a>
                             <a href="https://github.com/MDRobiulhassan/Backend-Event-Planner" target="_blank"><i
                                     class="fa-brands fa-github"></i> Code</a>
                         </div>
@@ -387,6 +433,11 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="projects-more">
+                <button id="show-more-btn" class="show-more-btn" type="button">
+                    Show More <i class="fa-solid fa-chevron-down"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -426,11 +477,11 @@
 
                 <div class="profiles-row">
                     <div class="profile-item">
-                        <img src="images/codeforces_logo.png" alt="Codeforces">
-                        <h4>Codeforces</h4>
-                        <p>Competitive Contests & Problem Solving</p>
-                        <a href="https://codeforces.com/profile/RobiulHassan" target="_blank" class="pf-link">
-                            View profile <i class="fa-solid fa-arrow-right"></i>
+                        <div class="pf-gh-icon"><i class="fa-brands fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <p>Repositories & Open Source Contribution</p>
+                        <a href="https://github.com/MDRobiulhassan" target="_blank" class="pf-link">
+                            View repos <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
 
@@ -444,20 +495,21 @@
                     </div>
 
                     <div class="profile-item">
+                        <img src="images/codeforces_logo.png" alt="Codeforces">
+                        <h4>Codeforces</h4>
+                        <p>Competitive Contests & Problem Solving</p>
+                        <a href="https://codeforces.com/profile/RobiulHassan" target="_blank" class="pf-link">
+                            View profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="profile-item">
                         <img src="images/gfg_logo.svg" alt="GeeksforGeeks">
                         <h4>GeeksforGeeks</h4>
                         <p>Problem Sets & Computer Science Concepts</p>
                         <a href="https://www.geeksforgeeks.org/user/robiulhasc8r0/" target="_blank" class="pf-link">
                             View profile <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <div class="profile-item">
-                        <div class="pf-gh-icon"><i class="fa-brands fa-github"></i></div>
-                        <h4>GitHub</h4>
-                        <p>Repositories & Open Source Contribution</p>
-                        <a href="https://github.com/MDRobiulhassan" target="_blank" class="pf-link">
-                            View repos <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -563,8 +615,8 @@
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea name="message" class="form-input"
-                                placeholder="Tell me about your project..." required></textarea>
+                            <textarea name="message" class="form-input" placeholder="Tell me about your project..."
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn-solid" style="width: 100%; justify-content: center;">
                             Send message <i class="fa-solid fa-arrow-right"></i>
@@ -579,7 +631,7 @@
                     </div>
                     <div class="info-block">
                         <label>Phone</label>
-                        <a href="tel:01636114935">+880 1636-114935</a>
+                        <a href="tel:01636114935">+880 1568-341706</a>
                     </div>
                     <div class="info-block">
                         <label>Location</label>
@@ -596,12 +648,6 @@
                                     class="fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
-                    <div class="map-box">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7379.398761550087!2d91.82314564031138!3d22.364977140395833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd883de5d7c91%3A0xf7af0db5aecdf45b!2z4Kau4KeB4Kaw4Ka-4Kam4Kaq4KeB4KawLCDgpprgpp_gp43gpp_gppfgp43gprDgpr7gpq4!5e0!3m2!1sbn!2sbd!4v1743272446795!5m2!1sbn!2sbd"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
                 </div>
             </div>
         </div>
@@ -617,7 +663,7 @@
                     <a href="https://github.com/MDRobiulhassan" target="_blank">GitHub</a>
                     <a href="https://www.linkedin.com/in/md-robiul-hassan" target="_blank">LinkedIn</a>
                     <a href="mailto:robiulhassan.dev07@gmail.com">Email</a>
-                    <a href="https://codeforces.com/profile/RobiulHassan" target="_blank">Codeforces</a>
+                    <a href="https://leetcode.com/u/MD_Robiul_Hassan/" target="_blank">LeetCode</a>
                 </div>
             </div>
         </div>
