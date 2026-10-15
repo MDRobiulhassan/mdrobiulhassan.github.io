@@ -652,6 +652,86 @@ textarea.form-input { resize: vertical; min-height: 120px; }
 .toast.show { transform: translateY(0); opacity: 1; }
 
 /* ================================================================
+   SCROLL REVEALS — a restrained signal-lock motif for the dark UI
+   ================================================================ */
+.scroll-reveal {
+  --reveal-delay: 0ms;
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity 650ms cubic-bezier(.2, .7, .2, 1) var(--reveal-delay),
+    transform 750ms cubic-bezier(.2, .7, .2, 1) var(--reveal-delay);
+  will-change: opacity, transform;
+}
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.hero-photo.scroll-reveal { transform: translate3d(24px, 8px, 0) rotate(1deg); }
+.hero-photo.scroll-reveal.is-visible { transform: translate3d(0, 0, 0) rotate(0); }
+
+/* Headings resolve through a narrow blue scan line. */
+.section-label.scroll-reveal {
+  transform: translate3d(-12px, 0, 0);
+  transition: opacity 500ms ease var(--reveal-delay), transform 500ms ease var(--reveal-delay);
+}
+.section-label.scroll-reveal.is-visible { transform: translate3d(0, 0, 0); }
+.section-heading.scroll-reveal { position: relative; width: fit-content; max-width: 100%; }
+.section-heading.scroll-reveal::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -3px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), rgba(59, 130, 246, 0));
+  transition: right 800ms cubic-bezier(.2, .7, .2, 1) 180ms;
+}
+.section-heading.scroll-reveal.is-visible::after { right: 0; }
+
+/* Timeline entries arrive from their shared vertical spine. */
+.timeline-entry.scroll-reveal { transform: translate3d(-18px, 12px, 0); }
+.timeline-entry.scroll-reveal.is-visible { transform: translate3d(0, 0, 0); }
+.timeline-entry::before { transition: border-color 400ms ease, box-shadow 400ms ease, background-color 400ms ease; }
+.timeline-entry.is-visible::before { background-color: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 5px var(--accent-dim); }
+
+/* Cards get a small alternating drift, like panels settling into a grid. */
+.skill-group.scroll-reveal,
+.project-card.scroll-reveal,
+.ctf-card.scroll-reveal,
+.profile-item.scroll-reveal,
+.cert-card.scroll-reveal {
+  transform: translate3d(0, 20px, 0) scale(.985);
+}
+.project-card:nth-child(3n + 2).scroll-reveal,
+.cert-card:nth-child(3n + 2).scroll-reveal { transform: translate3d(12px, 20px, 0) scale(.985); }
+.project-card:nth-child(3n).scroll-reveal,
+.cert-card:nth-child(3n).scroll-reveal { transform: translate3d(-12px, 20px, 0) scale(.985); }
+.skill-group.scroll-reveal.is-visible,
+.project-card.scroll-reveal.is-visible,
+.ctf-card.scroll-reveal.is-visible,
+.profile-item.scroll-reveal.is-visible,
+.cert-card.scroll-reveal.is-visible { transform: translate3d(0, 0, 0) scale(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .scroll-reveal,
+  .section-label.scroll-reveal,
+  .timeline-entry.scroll-reveal,
+  .skill-group.scroll-reveal,
+  .project-card.scroll-reveal,
+  .ctf-card.scroll-reveal,
+  .profile-item.scroll-reveal,
+  .cert-card.scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+  .section-heading.scroll-reveal::after { display: none; }
+}
+
+/* ================================================================
    RESPONSIVE
    ================================================================ */
 @media (max-width: 900px) {

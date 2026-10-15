@@ -139,4 +139,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   updateProjects();
+
+  // Scroll reveals are observed once and then left settled in place.
+  // Keeping this content visible when IntersectionObserver is unavailable
+  // avoids hiding anything in older browsers or under script errors.
+  if ("IntersectionObserver" in window) {
+    const revealTargets = document.querySelectorAll(
+      ".hero-tag, .hero h1, .hero-desc, .hero-btns, .hero-socials, .hero-photo, " +
+      ".section-label, .section-heading, .section-desc, .timeline-entry, .edu-block, " +
+      ".skill-group, .project-card, .ctf-card, .profile-item, .cert-card, " +
+      ".contact-form, .contact-info"
+    );
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.14,
+      rootMargin: "0px 0px -48px 0px"
+    });
+
+    revealTargets.forEach((element) => {
+      // Stagger siblings without making long grids wait too long.
+      const siblingIndex = Array.from(element.parentElement.children).indexOf(element);
+      const delay = Math.min(siblingIndex * 75, 300);
+      element.style.setProperty("--reveal-delay", `${delay}ms`);
+      element.classList.add("scroll-reveal");
+      revealObserver.observe(element);
+    });
+  }
 });
