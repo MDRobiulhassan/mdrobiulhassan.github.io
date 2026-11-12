@@ -1,29 +1,49 @@
-# Robiul Hassan - Portfolio Website 
+# Robiul Hassan Portfolio
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://mdrobiulhassan.github.io)
+This repository contains the personal portfolio website of Robiul Hassan, a
+software engineer based in Chittagong, Bangladesh.
 
-A responsive personal portfolio website showcasing my projects, skills,coding profiles,certifications,resume and contact information as a Computer Science student and developer.
+The site presents:
 
-## 🔥 Features
+- Professional experience and education
+- Technical skills and tools
+- Backend, web, AI, mobile, and competitive programming projects
+- Coding profiles and cybersecurity competition results
+- Certifications and contact information
 
-- **Modern UI**: Clean, responsive design with smooth animations
-- **Project Showcase**: Highlighting my best work with direct GitHub links
-- **Skills Visualization**: Interactive progress bars for technical skills
-- **Certifications**: Showcase of earned certifications with links and verification
-- **Contact Form**: Easy way to get in touch
-- **Deployment**: Available on GitHub Pages
+## Technology
 
-## 🛠 Technologies Used
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Font Awesome 6 via CDN
+- Google Fonts
 
-**Frontend:**
-- HTML5, CSS3, JavaScript
-- Bootstrap 4 (Responsive layout)
-- Font Awesome (Icons)
-- jQuery (DOM manipulation)
+The website is a static site. It does not require a package manager,
+build step, or server-side application.
 
+## Run locally
 
-## 🚀 Live Demo
+Open `index.html` directly in a browser, or serve the project directory with
+any static file server. For example:
 
-- **GitHub Pages**: [https://mdrobiulhassan.github.io](https://mdrobiulhassan.github.io)
+```text
+python -m http.server 8000
+```
 
+Then visit `http://localhost:8000`.
 
+## Project structure
+
+```text
+index.html       Main portfolio page
+style.css        Site styles
+main.js          Navigation, filtering, and reveal interactions
+images/          Images used by the page
+```
+
+## Deployment
+
+The site can be deployed to GitHub Pages or any static hosting provider.
+
+Live site: [mdrobiulhassan.github.io](https://mdrobiulhassan.github.io)
